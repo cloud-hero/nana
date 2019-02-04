@@ -43,7 +43,7 @@ func main() {
 * [Healthcheck Handler](#healthcheck-handler)
 * [Pause Handler](#pause-handler)
 * [Test HTTP Server](#test-http-server)
-* [Nats](#kafka)
+* [Kafka](#kafka)
 
 ### Logging
 
@@ -117,7 +117,7 @@ func TestMyApp(t *testing.T) {
 }
 ```
 
-### Messages
+### Kafka
 
 #### Kafka Receiver
 Provides a receiver which can continuously receive messages from a Kafka topic, and process them using a custom processor.
