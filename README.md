@@ -12,7 +12,6 @@ func main() {
 	config := &nana.AppConfig{
 		DataDogHost:       "localhost",
 		DataDogAPMPort:    "8126",
-		DataDogStatsDPort: "8125",
 		Environment:       "development",
 		KafkaBrokers:      []string{"localhost:9092"},
 		LogLevel:          "info",

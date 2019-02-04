@@ -22,15 +22,15 @@ type AppConfigurer interface {
 
 // AppConfig contains the base configuration fields required for an nana app.
 type AppConfig struct {
-	DataDogHost       string   `long:"datadog-host" env:"DATADOG_HOST" default:"localhost"`
-	DataDogAPMPort    string   `long:"datadog-apm-port" env:"DATADOG_APM_PORT" default:"8126"`
-	DataDogStatsDPort string   `long:"datadog-statsd-port" env:"DATADOG_STATSF_PORT" default:"8125"`
-	Environment       string   `long:"env" env:"ENVIRONMENT" value-name:"development" default:"development"`
-	KafkaBrokers      []string `long:"kafka-brokers" env:"KAFKA_BROKERS" env-delim:"," default:"localhost:9092"`
-	LogLevel          string   `long:"log-level" env:"LOG_LEVEL" default:"info"`
-	Name              string
-	Port              string `long:"port" env:"APP_PORT" default:":8000"`
-	Version           string
+	OpentracingHost     string   `long:"opentracing-host" env:"OPENTRACING_HOST" default:"localhost"`
+	OpentracingPort     string   `long:"opentracing-port" env:"OPENTRACING_PORT" default:"8126"`
+	OpentracingProvider string   `long:"opentracing-provider" env:"OPENTRACING_PROVIDER" default:"jaeger"`
+	Environment         string   `long:"env" env:"ENVIRONMENT" value-name:"development" default:"development"`
+	KafkaBrokers        []string `long:"kafka-brokers" env:"KAFKA_BROKERS" env-delim:"," default:"localhost:9092"`
+	LogLevel            string   `long:"log-level" env:"LOG_LEVEL" default:"info"`
+	Name                string
+	Port                string `long:"port" env:"APP_PORT" default:":8000"`
+	Version             string
 }
 
 // GetDataDogHost returns the DataDog host.
