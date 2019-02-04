@@ -172,7 +172,7 @@ if err != nil {
 }
 
 topic := "render-html"
-msgType := &pb.BulkIncomingMessage{
+msgType := &pb.Test{
   Baggage: baggae,
 }
 
