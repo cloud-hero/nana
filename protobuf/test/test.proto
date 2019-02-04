@@ -1,0 +1,6 @@
+syntax = "proto3";
+package protobuf.test;
+message Test {
+  map<string, string> baggage = 1;
+  string payload = 2;
+}
